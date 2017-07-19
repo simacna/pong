@@ -48,7 +48,19 @@ while x.counter < 10:
 del x.counter
 
 aa = yo.f
-print(aa())
+# print(aa())  -- works!
+
+class Dog:
+  def __init__(self, name):
+    self.name = name
+    self.tricks = []
+
+  def add_trick(self, trick):
+    self.tricks.append(trick)
+
+d = Dog('Fido')
+d.add_trick('dance')
+print(d.tricks)
 
 
 
