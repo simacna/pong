@@ -53,3 +53,17 @@ class Dog:
 d = Dog('Fido')
 d.add_trick('dance')
 print(d.tricks)
+
+
+class Dogg:
+  def __init__(self, name):
+    self.name = name
+    self.tricks = []
+
+  def tricks(self, tricks):
+    self.tricks.append(tricks)
+
+dog1 = Dog1('Sina')
+print(dog1)
+
+
