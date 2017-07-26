@@ -30,7 +30,16 @@ class Spiro:
     self.l = l
     self.col = col
 
-    #
+    #reduce r/R to its smallest form by dividing with GCD
+
+    gcdVal = gcd(self.r, self.R)
+    self.nRot = self.r//gcdVal
+    #get ratio of radii
+    self.k = r/float(R)
+    # set the color
+    self.t.color(*col)
+    #store the current angle
+    self.a = 0
 
 
 
