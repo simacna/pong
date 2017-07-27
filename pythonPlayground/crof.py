@@ -67,9 +67,11 @@ class Length:
 
 capitals = {'a':1, 'b':2, 'c':3}
 # print('a' in capitals)
-for i in capitals:
-  # print(capitals[i], "is number", i)
-  print(i)
+# for i in capitals:
+#   # print(capitals[i], "is number", i)
+#   #print(i)  - prints keys, i.e. a, b, c
+#   print(capitals.items())
 
-
+# a = list(capitals.values())
+# print(a[1])
 
