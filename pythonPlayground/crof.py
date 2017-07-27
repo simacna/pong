@@ -55,11 +55,21 @@ class Length:
     def __repr__(self):
         return "Length(" + str(self.value) + ", '" + self.unit + "')"
 
-if __name__ == "__main__":
-    x = Length(4)
-    print(x)
-    y = eval(repr(x))
+# if __name__ == "__main__":
+#     x = Length(4)
+#     print(x)
+#     y = eval(repr(x))
 
-    z = Length(4.5, "yd") + Length(1)
-    print(repr(z))
-    print(z)
+#     z = Length(4.5, "yd") + Length(1)
+#     print(repr(z))
+#     print(z)
+
+
+capitals = {'a':1, 'b':2, 'c':3}
+# print('a' in capitals)
+for i in capitals:
+  # print(capitals[i], "is number", i)
+  print(i)
+
+
+
