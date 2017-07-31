@@ -75,3 +75,11 @@ capitals = {'a':1, 'b':2, 'c':3}
 # a = list(capitals.values())
 # print(a[1])
 
+def name():
+  full_name = str(input("What's your first and last name"))
+  return full_name
+
+anumber = int(input('int only'))
+print(anumber)
+
+
