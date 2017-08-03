@@ -79,7 +79,19 @@ def name():
   full_name = str(input("What's your first and last name"))
   return full_name
 
-anumber = int(input('int only'))
-print(anumber)
+# anumber = int(input('int only'))
+# print(anumber)
+
+##
+# practicing interactive python
+
+name = 'this is a name, NOT'
+# print(name.split('v'))
+
+
+
+
+
+
 
 
