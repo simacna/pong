@@ -86,9 +86,20 @@ def name():
 # practicing interactive python
 
 name = 'this is a name, NOT'
-# print(name.split('v'))
+# print(name.split('a'))
 
+a = set([1,2,3,4,5])
+b = set([94,5,6,7,8])
+c = a - b
+# print(c)
 
+a = [1,2,3]
+b = [3,4,5]
+(a.append(6))
+# print(a)
+
+capitals = {'Iowa': 'DesMoines', 'Wisconsin': 'Madison'}
+# print(capitals['Iowa'])
 
 
 
