@@ -101,6 +101,14 @@ b = [3,4,5]
 capitals = {'Iowa': 'DesMoines', 'Wisconsin': 'Madison'}
 # print(capitals['Iowa'])
 
+phoneext={}
+
+def addExt(name, ext):
+  phoneext[name] = ext
+  return phoneext
+print(addExt('David', 0000))
+print(phoneext)
+
 
 
 
