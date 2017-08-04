@@ -101,15 +101,20 @@ b = [3,4,5]
 capitals = {'Iowa': 'DesMoines', 'Wisconsin': 'Madison'}
 # print(capitals['Iowa'])
 
-phoneext={}
+# phoneext={}
 
-def addExt(name, ext):
-  phoneext[name] = ext
+# def addExt(name, ext):
+#   phoneext[name] = ext
+#   return phoneext
+# addExt('David', 0000) #{'David': 0, 'Benny': 1111}
+# addExt('Benny', 1111) #['David', 'Benny']
+
+def addExt2(**kwargs):
+  for key,value in kwargs.iteritems():
+    phoneext[key] = value
   return phoneext
-print(addExt('David', 0000))
-print(phoneext)
-
-
+kwargs = {"David": 0000, "Benny": 1111}
+print(addExt2(**kwargs))
 
 
 
