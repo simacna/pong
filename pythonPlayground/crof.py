@@ -98,7 +98,7 @@ b = [3,4,5]
 (a.append(6))
 # print(a)
 
-capitals = {'Iowa': 'DesMoines', 'Wisconsin': 'Madison'}
+capitals = {'WA': 'Tacoma', 'OR': 'Salem'}
 # print(capitals['Iowa'])
 
 # phoneext={}
