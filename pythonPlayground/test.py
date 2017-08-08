@@ -4,16 +4,17 @@ def args(arg1, *arg):
   for args in arg:
     print("yo i'm another arg", args)
 
-a = args(1, 'two', 3)
-
+# ar = args(1, 'two', 3)
+capitals = {'WA-K': 'Tacoma-V', 'OR-K': 'Salem-V'}
 # **kwargs
-
+# print(capitals['OR-K'])
 def args(a, **kwargs):
   for key, value in kwargs:
     print('i am ', key, value)
 
 def a(kw):
   for k in kw:
-    print(k, kw[k])
-    
+    print(k," .. .. ",kw[k])
+
+a(capitals)
 
