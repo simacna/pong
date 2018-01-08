@@ -29,7 +29,7 @@ Construct a class hierarchy for people on a college campus.
 Include faculty, staff, and students. What do they have in common? What distinguishes them from one another?
 '''
 
-class College_Campus:
+class College:
 
   def __init__(self, position, title):
     self.position = position
@@ -38,5 +38,16 @@ class College_Campus:
   def role(self):
     print("I'm a " + self.position) 
 
-a = College_Campus("staff", "mr")
-a.role()
+# a = College_Campus("staff", "mr")
+# a.role()
+
+class Faculty(College):
+  def __init__(self, staffID):
+    self.staffID = staffID
+
+
+
+
+
+
+
