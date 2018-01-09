@@ -42,10 +42,12 @@ class College:
 # a.role()
 
 class Faculty(College):
-  def __init__(self, staffID):
+  def __init__(self, position, title, staffID):
+    College.__init__(self, position, title)
     self.staffID = staffID
 
-
+b = Faculty
+b.role('Prof', 'Mr', 1111)
 
 
 
