@@ -46,11 +46,15 @@ class Faculty(College):
     College.__init__(self, position, title)
     self.staffID = staffID
 
+  def creds(self):
+    print("im a " + self.position + self.title + self.staffID)
+
 # b = Faculty
 # b.role('Prof', 'Mr', 1111)
 
 college = College('prof', 'mr')
-# faculty = college(112)
+faculty = Faculty('prof', 'mr', 111)
+print(faculty.creds())
 
 class Complex:
   def __init__(self, realpart, imagpart):
@@ -58,7 +62,8 @@ class Complex:
     self.i = imagpart
 
 x = Complex(2,-5)
-print(x.r)
+# print(x.r)
+
 
 
 
