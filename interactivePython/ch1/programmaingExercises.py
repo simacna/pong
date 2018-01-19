@@ -26,4 +26,6 @@ class Fraction:
       return(self.num)
 
 fraction = Fraction(2,3)
-fraction.show()
+# fraction.__add__('4/6')
+
+
