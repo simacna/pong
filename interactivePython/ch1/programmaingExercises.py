@@ -26,4 +26,4 @@ class Fraction:
       return(self.num)
 
 fraction = Fraction(2,3)
-print(fraction.getNum())
+fraction.show()
