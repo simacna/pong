@@ -28,4 +28,6 @@ class Fraction:
 fraction = Fraction(2,3)
 # fraction.__add__('4/6')
 
+#question 6-9 don't need code
+
 
