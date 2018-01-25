@@ -32,10 +32,20 @@ class Person(object):
 # print(day1)
 #just for a git commit..
 
-def test(i, j):
+def test(grid, i, j):
   for x in range(i,3):
     for y in range(j, 3):
       print ('y', y)
     print('x', x)
 
-test(1,1)
+# test(1,1)
+
+# print(all([1,1,False]))
+
+import time
+
+start = time.time()
+print('time')
+end = time.time()
+
+print('this is %s for %i'%('sina', 12))
