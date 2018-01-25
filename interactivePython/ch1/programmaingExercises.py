@@ -30,4 +30,9 @@ fraction = Fraction(2,3)
 
 #question 6-9 don't need code
 
+a = True
+
+if logical_xor(a):
+    print("yes")
+
 
