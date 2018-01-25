@@ -21,13 +21,21 @@ class Person(object):
 # user = Person()
 # print(user)
 
-class Day(object):
-    def __init__(self, visits, contacts):
-        self.visits = visits
-        self.contacts = contacts
-    def __str__(self):
-        return “Visits: %i, Contacts: %i” % (self.visits, self.contacts)
+# class Day(object):
+#     def __init__(self, visits, contacts):
+#         self.visits = visits
+#         self.contacts = contacts
+#     def __str__(self):
+        # return “Visits: %i, Contacts: %i” % (self.visits, self.contacts)
 
-day1 = Day(10,1)
-print(day1)
+# day1 = Day(10,1)
+# print(day1)
 #just for a git commit..
+
+def test(i, j):
+  for x in range(i,3):
+    for y in range(j, 3):
+      print ('y', y)
+    print('x', x)
+
+test(1,1)
