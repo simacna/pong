@@ -5,8 +5,6 @@ def min_list(list):
       min = list[idx]
   return min
 
-a = [x for x in range(10)]
-
 # print(min_list(a))
 # print(range(10))
 
@@ -14,14 +12,15 @@ a = [x for x in range(10)]
 #section 2.4
 
 def sina_anagram(s1, s2):
-  # split_s1 = s1.split(',')
-  # split_s2 = s2.split(',')
+  split_s1 = s1.split(',')
+  split_s2 = s2.split(',')
   # if(len(s1 == s2)):
   # print(split_s2)
-  pass
+  return split_s2
 
 
-sina_anagram('hello', 'worsld')
+
+print(sina_anagram('hello', 'worsld'))
 
 
 
