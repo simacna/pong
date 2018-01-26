@@ -48,4 +48,5 @@ start = time.time()
 print('time')
 end = time.time()
 
-print('this is %s for %i'%('sina', 12))
+# print('this is %s for %i'%('sina', 12))
+print(len("si**********"))
