@@ -13,7 +13,7 @@ def min_list(list):
 
 def sina_anagram(s1, s2):
   split_s1 = s1.split(',')
-  split_s2 = s2.split(',')
+  split_s2 = s2.split(' , ')
   # if(len(s1 == s2)):
   # print(split_s2)
   return split_s2
@@ -21,6 +21,8 @@ def sina_anagram(s1, s2):
 
 
 print(sina_anagram('hello', 'worsld'))
+
+
 
 
 
