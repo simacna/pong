@@ -20,8 +20,15 @@ def sina_anagram(s1, s2):
 
 
 
-print(sina_anagram('hello', 'worsld'))
+# print(sina_anagram('hello', 'worsld'))
+variable = 'hello'
+# s = variable.split(' ')
+# print(s)
+test = []
+for _ in variable:
+  test.append(_)
 
+print(test)
 
 
 
