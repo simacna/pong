@@ -12,11 +12,14 @@ def min_list(list):
 #section 2.4
 
 def sina_anagram(s1, s2):
-  split_s1 = s1.split(',')
-  split_s2 = s2.split(' , ')
-  # if(len(s1 == s2)):
-  # print(split_s2)
-  return split_s2
+  string1 = []
+  string2 = []
+
+  for _ in s1:
+    string1.append(_)
+  for _ in s2:
+    string2.append(_)
+
 
 
 
@@ -28,7 +31,8 @@ test = []
 for _ in variable:
   test.append(_)
 
-print(test)
+# print(test)
+# b = list(map(string,variable))
 
 
 
@@ -52,7 +56,8 @@ print(test)
 
 
 
-
+l = 'list'
+print(type(l))
 
 
 
