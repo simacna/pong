@@ -38,29 +38,6 @@ for _ in variable:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-l = 'list'
-print(type(l))
-
-
-
 def anagramSolution1(s1,s2):
     alist = list(s2)
 
