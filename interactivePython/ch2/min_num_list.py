@@ -67,6 +67,22 @@ def anagramSolution1(s1,s2):
 #first function should compare each number to every other number.
 #2nd function should be linear O(n)
 
+def findMin(alist):
+  overallmin = alist[0]
+  for i in alist:
+    print('i', i)
+    issmallest = True
+    for j in alist:
+      print('j', j)
+      if i > j:
+        issmallest = False
+        print('overallmin', overallmin)
+    if issmallest:
+        overallmin = i
+  return overallmin
+
+print(findMin([0,4,-1]))
+
 def func1(input):
   a = input[0]
   for idx in range(len(input)):
@@ -76,7 +92,7 @@ def func1(input):
 
 def func2(input):
   return min(input)
-print(func2([-1,2,-10,4]))
+# print(func2([-1,2,-10,4]))
 
 
 
