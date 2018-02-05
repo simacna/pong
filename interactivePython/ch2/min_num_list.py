@@ -36,8 +36,6 @@ for _ in variable:
 
 
 
-
-
 def anagramSolution1(s1,s2):
     alist = list(s2)
 
@@ -63,3 +61,25 @@ def anagramSolution1(s1,s2):
     return stillOK
 
 # print(anagramSolution1('abcd','dcba'))
+
+
+#write two python functions to find the min number in a list.
+#first function should compare each number to every other number.
+#2nd function should be linear O(n)
+
+def func1(input):
+  a = input[0]
+  for idx in range(len(input)):
+    if a > input[idx]:
+      a = input[idx]
+  return a
+
+def func2(input):
+  return min(input)
+print(func2([-1,2,-10,4]))
+
+
+
+
+
+
