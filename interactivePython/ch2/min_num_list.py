@@ -54,7 +54,7 @@ def anagramSolution1(s1,s2):
 
         if found:
             alist[pos2] = None
-            print('alist[pos2]', alist[pos2])
+            # print('alist[pos2]', alist[pos2])
         else:
             stillOK = False
 
