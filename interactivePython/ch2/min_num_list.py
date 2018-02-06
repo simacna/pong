@@ -46,7 +46,7 @@ def anagramSolution1(s1,s2):
         pos2 = 0
         found = False
         while pos2 < len(alist) and not found:
-
+            print("pos2", pos2)
             if s1[pos1] == alist[pos2]:
                 found = True
             else:
@@ -62,7 +62,7 @@ def anagramSolution1(s1,s2):
 
     return stillOK
 
-print(anagramSolution1('abcd','dcba'))
+print(anagramSolution1('abc','dcba'))
 
 
 #write two python functions to find the min number in a list.
