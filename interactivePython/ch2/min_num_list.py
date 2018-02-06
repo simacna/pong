@@ -62,7 +62,26 @@ def anagramSolution1(s1,s2):
 
     return stillOK
 
-print(anagramSolution1('abc','dcba'))
+# print(anagramSolution1('abc','dcba'))
+
+def anagramSolution2(s1,s2):
+    alist1 = list(s1)
+    alist2 = list(s2)
+
+    alist1.sort()
+    alist2.sort()
+
+    pos = 0
+    matches = True
+
+    while pos < len(s1) and matches:
+        if alist1[pos]==alist2[pos]:
+            pos = pos + 1
+        else:
+            matches = False
+
+    return matches
+
 
 
 #write two python functions to find the min number in a list.
@@ -96,6 +115,7 @@ def func2(input):
   return min(input)
 # print(func2([-1,2,-10,4]))
 
+[for idx in range(26) print((ord(idx) - ord('a')))]
 
 
 
