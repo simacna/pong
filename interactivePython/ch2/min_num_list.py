@@ -143,8 +143,11 @@ def test4():
 
 def test5():
   return list(range(100))
-print(test5())
 
+
+import time
+
+start_time = time.start()
 
 
 
