@@ -115,7 +115,49 @@ def func2(input):
   return min(input)
 # print(func2([-1,2,-10,4]))
 
-[for idx in range(26) print((ord(idx) - ord('a')))]
+# [for idx in range(26) print((ord(idx) - ord('a')))]
+
+
+#2.6 - lists
+
+def test1():
+  l = []
+  for i in range(100):
+    l.append(i)
+  return l
+
+def test2():
+  l = [i for i in range(100)]
+  return l
+
+
+def test3():
+  l = []
+  for i in range(100):
+    l = l + [i]
+  return l
+
+def test4():
+  l = list(range(100))
+  return l
+
+def test5():
+  return list(range(100))
+print(test5())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
