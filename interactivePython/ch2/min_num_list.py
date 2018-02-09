@@ -145,9 +145,8 @@ def test5():
   return list(range(100))
 
 
-import time
+import timeit
 
-start_time = time.start()
 
 
 
