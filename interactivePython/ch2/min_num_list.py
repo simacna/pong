@@ -123,18 +123,17 @@ def func2(input):
 def test1():
   l = []
   for i in range(100):
-    l.append(i)
+    l = l + [i]
   return l
 
 def test2():
-  l = [i for i in range(100)]
-  return l
-
-
-def test3():
   l = []
   for i in range(100):
-    l = l + [i]
+    l.append(i)
+  return l
+
+def test3():
+  l = [i for i in range(100)]
   return l
 
 def test4():
@@ -145,10 +144,19 @@ def test5():
   return list(range(100))
 
 
-import timeit
+import timeit #create a Timer object takes 2 python parameters
+
+t1 = timeit.Timer("test1()", "from __main__ import test1")
+t2 = timeit.Timer("test2()", "from __main__ import test2")
+t3 = timeit.Timer("test3()", "from __main__ import test3")
+t4 = timeit.Timer("test4()", "from __main__ import test4")
 
 
 
+print("concat ", t1.timeit(number=1000), "miliseconds")
+print("append ", t1.timeit(number=1000), "miliseconds")
+print("comprehension ", t1.timeit(number=1000), "miliseconds")
+print("list range ", t1.timeit(number=1000), "miliseconds")
 
 
 
