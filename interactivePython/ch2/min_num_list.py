@@ -140,9 +140,6 @@ def test4():
   l = list(range(100))
   return l
 
-def test5():
-  return list(range(100))
-
 
 import timeit #create a Timer object takes 2 python parameters
 
@@ -153,10 +150,35 @@ t4 = timeit.Timer("test4()", "from __main__ import test4")
 
 
 
-print("concat ", t1.timeit(number=1000), "miliseconds")
-print("append ", t1.timeit(number=1000), "miliseconds")
-print("comprehension ", t1.timeit(number=1000), "miliseconds")
-print("list range ", t1.timeit(number=1000), "miliseconds")
+# print("concat ", t1.timeit(number=1000), "miliseconds")
+# print("append ", t1.timeit(number=1000), "miliseconds")
+# print("comprehension ", t1.timeit(number=1000), "miliseconds")
+# print("list range ", t1.timeit(number=1000), "miliseconds")
+
+def popstart():
+  l = list(range(1000))
+  for i in l:
+    l.pop(i)
+  return l
+
+def popend():
+  l = list(range(1000))
+  for i in l:
+    l.pop()
+  return l
+# print(popstart()) -- commented out cuz it ain't working
+
+#book version of comparing pop @start vs pop @end below
+
+popzero = timeit.Timer("x.pop(0)", "from __main__ import x")
+popend = timeit.Timer("x.pop()", "from __main__ import x")
+
+x = list(range(200000))
+# print(popzero.timeit(number=1000)) 0.045
+
+x = list(range(200000))
+print(popend.timeit(number=1000)) #0.0000986
+
 
 
 
