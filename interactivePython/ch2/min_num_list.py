@@ -192,7 +192,9 @@ popend = timeit.Timer("x.pop()",
 #     print("%15.5f, %15.5f" %(pz,pt))
 
 alpha = {'a': 1, 'b':2}
-print(alpha['a'])
+print(alpha.get('a')) #vs alpha['a']? which faster. can't get faster than dict.get() since O(1)
+
+#get item and set items in dictionary are O(1)
 
 
 
