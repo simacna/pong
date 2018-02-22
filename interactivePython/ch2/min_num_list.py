@@ -194,8 +194,17 @@ popend = timeit.Timer("x.pop()",
 alpha = {'a': 1, 'b':2}
 print(alpha.get('a')) #vs alpha['a']? which faster. can't get faster than dict.get() since O(1)
 
+'a' in alpha #return strue
 #get item and set items in dictionary are O(1)
 
+for i in range(1000,10001, 200):
+  t = timeit.Timer('random.randrange(%d) in x'%i, 'from __main__ random, x')
+  x = list(range(i))
+  lst_time = t.timeit(number=1000)
+  x = {j:None for j in range(i)}
+  d_time = t.timeit(numer=1000)
+  print("%d,%10.3f,%10.3f" % (i, lst_time, d_time))
+  
 
 
 
