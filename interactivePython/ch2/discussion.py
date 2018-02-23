@@ -7,4 +7,4 @@ b = range(10)
 print(a)
 print(b)
 
-[print(x) for x in range(10)]
+# [print(x) for x in range(10)]
