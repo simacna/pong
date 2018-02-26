@@ -9,7 +9,6 @@ print(b)
 
 # [print(x) for x in range(10)]
 
-# for i in range(n):
-#      k = 2 + 2
+#2 - for i in range(n):  sina answer O(n)
+     #k = 2 + 2
 
-#above has to be O(1)
