@@ -1,11 +1,7 @@
 # Stack -> first in, last out
-
-
-
 class Stack:
-
   def __init__(self):
-    self.items = [2]
+    self.items = []
 
   def is_empty(self):
     # if len(self.items == []):
@@ -33,11 +29,13 @@ class Stack:
     return len(self.items)
 
 a = Stack()
-print(a.push(3))  #should print out
-# print(list())
-print(a.test())
-
+print(a.push(2))
 print(a.size())
+  #should print out
+# print(list())
+# print(a.test())
+
+# print(a.size())
 
 # s = Stack()
 # s.push('a')

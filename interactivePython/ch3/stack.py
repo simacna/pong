@@ -21,6 +21,7 @@ class Stack:
          return self.items
 
 a = Stack()
-a.push(3)
+a.push([3,2])
+a.push(4)
 # print(a.size())
 print(a.lists())
