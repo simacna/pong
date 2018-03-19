@@ -12,7 +12,7 @@ class Stack:
 
   def push(self, item):
     # print(self.items += [item])
-    return (self.items + [item])
+    return (self.items.append(item))
 
 
   def pop(self,item):
@@ -29,7 +29,10 @@ class Stack:
     return len(self.items)
 
 a = Stack()
-print(a.push(2))
+a.push(2)
+a.push(3)
+
+
 print(a.size())
   #should print out
 # print(list())
